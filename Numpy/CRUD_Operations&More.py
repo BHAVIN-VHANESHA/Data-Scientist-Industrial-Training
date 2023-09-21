@@ -191,13 +191,20 @@ arr = np.array([
 # print(arr[:2, :, :2])  # `:2` refers elements inside each col of 2D arr
 # '''
 
+
+# np.nditer() & flat
 # iterating through all the elements in array
 # for elements in arr.flat:
 #     print(elements)
+# for elements in np.nditer(arr[1]):  # we can also get specific rows & cols
+#     print(elements)
 
+
+# Index
 # to know the exact position of element in array
 # for row_col, element in np.ndenumerate(arr):
 #     print(row_col, element)
+
 
 ''' append()
 arr = np.array([
