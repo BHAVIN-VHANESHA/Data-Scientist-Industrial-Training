@@ -231,9 +231,17 @@ print(new_arr)  # it creates 1D array
 # BASIC OPERATIONS
 
 a = np.array([5, 10, 20, 3, 50])
-b = np.array([[4, 5, 244, 47, 98], [33, 54, 74, 23, 19]])
-c = np.array([[4, 5, 47], [54, 23, 19], [11, 71, 0]])
-d = np.array([[5, 47, 98], [33, 23, 19], [-1, -80, -45]])
+
+b = np.array([[4, 5, 244, 47, 98],
+              [33, 54, 74, 23, 19]])
+
+c = np.array([[4, 5, 47],
+              [54, 23, 19],
+              [11, 71, 0]])
+
+d = np.array([[5, 47, 98],
+              [33, 23, 19],
+              [-1, -80, -45]])
 # print(f"a-b= {a-b}")
 # print(f"a+b= {a+b}")
 # print(f"a*b= {a*b}")  # element wise multiplication
@@ -248,3 +256,15 @@ d = np.array([[5, 47, 98], [33, 23, 19], [-1, -80, -45]])
 # print(f"NOT b= {~b}")
 # print(f"left shift b= {b<<2}")
 # print(f"right shift a= {a>>2}")
+
+
+
+# D E L E T E
+# it takes index value of element as obj to delete element & it returns 1D array
+# original array does not change
+# print(np.delete(a, 1))
+# print(np.delete(c, 1))
+# print("row deleted:")
+# print(np.delete(c, 2, axis=0))
+# print("col deleted:")
+# print(np.delete(c, 2, axis=1))
