@@ -49,8 +49,17 @@ arr = np.linspace(10, 50, 10)  # resultant array is going to have only 10 number
 # having same difference between each element
 print(f"linspace arr: {arr}")
 
-# reshape()
+# reshape()  reshape an array without changing the total size.
 print(arr.reshape(2, 5))
+
+# resize()  resize an array changing the total size.
+print(np.resize(arr, (3, 5)))
+
+# pad()  enlarge and pad an array.
+print(np.pad(arr, (3, 3)))
+
+# repeat()  repeat elements of an array
+print(arr.repeat(2))
 # '''
 
 ''' random()
