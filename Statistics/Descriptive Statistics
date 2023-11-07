@@ -1,0 +1,49 @@
+=> Random Variables: it is a variable that stores that depends on the outcome of a random phenomenon
+e.g:- like tossing a coin, at one time it can be heads or tails so the probability can be 1/2
+
+Types of Random Variables -
+1. Numerical RV (like: x = 2, x = 1/2, x = 0.5)
+    i. Discrete RV (should be whole number & only +ve/finite number)
+    ii. Continuous RV (can have number, float, decimal)
+2. Categorical RV (like: x = 'male', x = 'animals', x = 'hello')
+
+
+=> Covariance: it is a measure to show relation b/w two random variables. Only helps to find the direction of relation
+1. Positive Covariance: outcome of the 2 RV tends to move in same direction
+2. Negative Covariance: outcome of the 2 RV tends to move in inverse direction
+Formula:- cov(x,y) = summation[(x-x(mean))(y-y(mean))] / n-1
+to overcome some limitations of Covariance, Pearson Correlation Coefficient was introduced
+
+
+=> Pearson Correlation Coefficient: it also helps to find the strength of relation b/w 2 RV
+Formula:- corr(x,y) = cov(x,y) / Standard Deviation(x) * Standard Deviation(y)
+correlation of sample & population
+sample: r(x,y) = SD(x,y) / SD(x) * SD(y)
+population: p(x,y) = sigma(x) / sigma(x) * sigma(y)
+
+
+=> Spearman Rank Correlation: it is used when data is ordinal, interval or ratio.
+                              It shows monotonic(both variable must increase or decrease) relationship b/w 2 RV & also strength
+if there are multiple same value then find mean and rank accordingly
+Formula:- r = cov(rank(x) * rank(y)) / SD(x) * SD(y)
+mathematical = 1 - 6 summation(difference of sets of rank)^2 / n(n**2 - 1)
+def spearman(a,b):
+    rank1 = a.rank()
+    rank2 = b.rank()
+    covariance = rank1.cov(rank2)
+    coeff = covariance / (rank1.std() * rank2.std())
+    return coeff
+OR
+use SciPy package
+scipy.stats.spearman(a,b)
+
+
+=> Variable Measurement Scale
+1. Dependent Variable
+2. Independent Variable
+like Linear Regression
+Different types of data to measure variable:
+1. Nominal (qualitative/categorical data, like gender, cast name, colour, etc.)
+2. Ordinal (qualitative data but here order matters but distance does not matter, like cancer stages it does not have same time period b/w 2 stages)
+3. Interval (quantitative data, where both order and equal distance b/w values matters & cannot measure in 0)
+4. Ratio (same as Interval but value can be measure in 0)
