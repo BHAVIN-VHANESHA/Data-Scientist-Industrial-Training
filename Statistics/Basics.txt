@@ -1,0 +1,75 @@
+* Overview *
+
+Statistics is a Mathematical Science use to perform data collection, data analysis, data summarization,
+data organization, data interpretation or data presentation.
+
+1. Introduction:
+-> types of analysis (quantitative which is statistical analysis & qualitative which is non-statistical analysis)
+-> categories of stats
+    i. Descriptive Stats (uses population and sample data)
+    ii. Inferential Stats (strictly uses sample data)
+
+2. Terminologies:
+-> population (superset or everything that is being studied)
+-> sample (subset of superset)
+-> variable (characteristic, number, quantity that can b e measured)
+-> parameter (characteristic of population like avg, total, etc.)
+
+Descriptive Stats
+3. Measures of Central Tendency:
+-> mean
+-> median (values should be shorted)
+-> mode (most frequently occurred value)
+
+4. Measures of Spread:
+-> standard deviation (it is a measure that describes how each values differs from its mean. Square root of variance)
+-> variance (it is the measurement that describes how much a random variable differs from its expected value. (SD)^2)
+-> quartile ranges (it is measure based on the dividing a dataset into quartiles. It focuses on more /bulk of values
+                    Plots: Box plot, Violin plot.
+                    It represents where values lies in 3 different quartiles:Q1=25%, Q2(median)=50%, Q3=75%
+                    Inter Quartile Range(IQR) = Q3 - Q1)
+steps while defining the IQR:
+i. data should be arranged in increasing order
+ii. find Q1 & Q3
+iii. find IQR
+iv. upper bound (Q3 - (1.5 * IQR))
+v. lower bound (Q1 - (1.5 * IQR))
+NOTE: anything that lies outside lower & upper bound are 'Outliers'
+different ways to find outliers: Box plot, Violin plot, Scatter plot, Z-test, IQR
+
+5. Random Variables & types
+6. Pearson Correlation
+7. Co-Variance
+
+bridge b/w Descriptive Stats & Inferential Stats
+8. Spearman Rank Correlation
+
+Inferential Stats
+9. Probability:
+-> Addition Rule
+-> Multiplication Rule
+-> Permutation & Combination
+-> Bayes Theorem
+
+10. Hypothesis Testing:
+-> t-test
+-> Z-test
+-> f-test
+-> Chai-Square Test
+-> Type I & II errors
+-> p-value & Confidence
+
+11. Central Limit Theorem
+12. Skewness
+
+13. Distributions:
+-> Normal/Gaussian
+-> Binomial
+-> Passion's
+
+Extra Topics:
+-> Variable Measurement
+-> Nominal
+-> Ordinal
+-> Interval
+-> Ratio
