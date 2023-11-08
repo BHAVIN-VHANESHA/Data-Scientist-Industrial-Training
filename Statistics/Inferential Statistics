@@ -1,0 +1,49 @@
+=> Probability: it is a measure of likelihood or chance of particular event will occur
+P = no. of ways an event can occur / no. of possible outcomes
+e.g:- dice rolling probability
+sample space(1 dice): 1,2,3,4,5,6
+The value of probability always lies b/w 0-1
+two dice: what is prob to get 5 & 7
+sample space of 5: 1+4,2+3,3+2,4+1
+sample space of 7: 1+6,2+5,3+4,4+3,5+2,1+6
+so prob of 5 & 7 = 4/36 * 6/36
+so prob of 5 or 7 = 4/36 + 6/36
+
+e.g:- card probability
+total cards = 52
+Hearts: A,1,2,3,4,5,6,7,8,9,10,J,Q,K
+Clubs: A,1,2,3,4,5,6,7,8,9,10,J,Q,K
+Spades: A,1,2,3,4,5,6,7,8,9,10,J,Q,K
+Diamonds: A,1,2,3,4,5,6,7,8,9,10,J,Q,K
+
+rule of complementary events: Prob(event) + Comp(event) = 1
+
+two types of probability:
+1. Conditional (like selecting a boy with specific height or age, ect.)
+Bayes Theorem: P(A|B) = P(A intersection B) / P(B)
+               P(A|B) = P(A intersection B) / P(A)
+P(A)-probability of A occurring
+P(B)-probability of B occurring
+P(A|B)-probability of A when B has occurred
+P(B|A)-probability of B when A has occurred
+P(A intersection B)-probability of A & B has occurred
+
+2. Unconditional (like selecting a boy)
+
+
+=> Addition Rule
+Mutually Exclusive: if the two events cannot occur at the same time (like tossing a coin)
+Non Mutually Exclusive: if the two events can occur at the same time (like picking a card of heart or king, also it can be both)
+
+
+=> Multiplication Rule
+Independence of event: one event does not affect another event (rolling dice)
+Dependence of event: one event affect another event (drawing cards)
+
+
+=> Permutation & Combination
+In permutation order matters & in combination order does not matters
+permutation(nPr) = n! / (n - r)!
+combination(nCr) = n! / r!(n - r)!
+n-total number of objects
+r-no. of objects you are picking
