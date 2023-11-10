@@ -47,3 +47,63 @@ permutation(nPr) = n! / (n - r)!
 combination(nCr) = n! / r!(n - r)!
 n-total number of objects
 r-no. of objects you are picking
+
+
+=> Probability Distribution: is can be defined as a distribution of frequencies which is not based on the actual outcome
+or frequencies obtained by the mathematical computation or operational based on certain hypothesis.
+
+Types of PD:
+1. Discrete Distribution
+    i. Binomial Dist: it is the probability of success or failure of outcome, it is used when there can be only 2 possibility
+       if P(s) == P(f)[P(s) + P(f) = 1] we get bell curve & if != we get any random curve
+       Mean = np [n=no. of trials, p=prob of success]
+       Variance = npq [n=no. of trials, p=prob of success, q=prob of failure]
+       Formula:- P(x) = nCxp^x(1-p)^(n-x)
+    ii. Poisson: this dist is used when computing the probability of a certain number of success within a specific interval of time.
+        Mean = lamda*t [avg no. of successful in an interval of t=1, t = length of time]
+        Variance = Mean
+        Formula:- P(x) = (lamda*t)^x / x! * e^-lamda*t
+    iii. Rectangular
+    iv. Multinomial
+    v. Negative Binomial
+    vi. Geometric
+
+2. Continuous Distribution
+    i. Normal Dist(bell curve): continuous symmetrical probability distribution is also known as Gaussian Dist.
+       Central Limit Theorem: is states that the random variable follows this theorem only if mean & sigma^2 are = of sample & population
+    ii. Student t-dist
+    iii. Chi-Square
+    iv. F-dist
+
+=> Hypothesis Testing: there are 2 types Null & Alternate
+1. Null Hypothesis: it says the sample observation have no change occurred
+2. Alternate Hypothesis: it says the sample observation have a change occurred
+p-value is the probability of obtaining the observed result of a test, assuming that the null hypothesis is correct.
+alpha-value decides whether to reject null hypothesis when it is True(type 1 error)
+--> if p-value is < alpha-value reject null hypothesis & accept when >
+steps to find hypothesis:
+-> define the Null & Alternate Hypothesis
+-> state the value of alpha(5%)
+-> collect the sample data & calculate the sample stats
+-> calculate p-value
+-> conclusion- reject or accept Null hypo
+
+1. Z-test(one & two tail test)
+When to use Z-test: population variance should be known or if not than sample size should be >=30
+And if both the conditions fails than use t-test
+-> One sample Z-test: when we want to compare a sample mean with the population mean
+Formula:- sample mean(x) - population mean(mew) / population(SD)*root n(sample size)
+-> Two sample Z-test: when we want to compare the mean of 2 samples
+Formula:- sample mean(x1-x2) * population mean(mew1-mew2) / root (SD1^2/n1 + SD2^2/n2)
+
+2. t-test: if both the conditions of Z-test fails than use t-test
+-> One sample t-test: when we want to compare a sample mean with the population mean
+Formula:- sample mean(x) - population mean(mew) / sample(SD)*root n
+-> Two sample t-test: when we want to compare the mean of 2 samples
+Formula:- sample mean(x1-x2) * population mean(mew1-mew2) / root (SD1^2/n1 + SD2^2/n2)
+
+3. ANOVA(analysis of variance) test: it is used to compare the multiple samples on a single go
+-> One-way ANOVA: compares the different b/w the three or more samples of a single independent variable
+-> MANOVA: it will test the effect of one or ore independent variable on two or more dependent variable
+
+4. Chi-Square test: it is used to compare the categorical variables
