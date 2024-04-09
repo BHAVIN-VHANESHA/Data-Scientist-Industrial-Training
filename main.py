@@ -3,6 +3,9 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
+# To update all the packages of python using pip on Windows and Linux System run the below command in terminal
+nice python3 -m pip list --outdated --format=json | \ jq -r '.[] | "\(.name)==\(.latest_version)"' | \ xargs --no-run-if-empty -n1 pip3 install -U
+
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
