@@ -46,7 +46,7 @@ MODIFY COLUMN salary float;  --this works in MySQL/Oracle
 
 
 -- SQL Operations --
--- Constraints (to make some rules ot limit the data type)
+-- Constraints (to make some rules to limit the data type)
 CREATE DATABASE cartoon;
 
 USE cartoon;
